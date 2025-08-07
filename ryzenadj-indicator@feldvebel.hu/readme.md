@@ -10,7 +10,8 @@ A minimal GNOME Shell extension for displaying and controlling the **STAPM, fast
 This extension adds a simple indicator to the top bar that shows the current power limit and allows you to toggle between predefined wattage values (e.g., low-power mode and performance mode) with a click.
 
 
-Tested on Ubuntu 24.04 LTS + GNOME 46
+Tested on Ubuntu 24.04 LTS + GNOME 46 with a Ryzen 7 5700U CPU 
+
 ---
 
 ## ✨ Features
@@ -28,6 +29,7 @@ Tested on Ubuntu 24.04 LTS + GNOME 46
 - **Laptop users** who want to easily manage power and thermals
 - Quickly switch between **low-power and high-performance modes**
 - Visual feedback of current CPU wattage limit at a glance
+- Users who want to avoid `thermal throttling`
 
 ---
 
@@ -65,15 +67,19 @@ sudo make install
 
 ---
 
-## II: Testing (and geting default settings)
+## II: Testing (and get default settings)
 
 sudo ryzenadj --info
 
 ---
 
-## III. Testing (setting new power consumption values)
+## III. Testing (set new power consumption values)
 
-e.g.: 
+**IMPORTANT**
+
+`Your STAPM values may vary`
+
+e.g.: (21000 equals to 21 Watt)
 
 sudo ryzenadj --stapm-limit=21000 --fast-limit=21000 --slow-limit=21000
 
@@ -138,6 +144,8 @@ copy 'ryzenadj-indicarot@feldvebel.hu' folder to:
 
 
 sudo chmod 777 ~/.local/share/gnome-shell/extensions/ryzenadj-indicator\@feldvebel.hu/extension.js
+
+`open extension.js and change STAPM values according to your CPU` 
 
 
 
