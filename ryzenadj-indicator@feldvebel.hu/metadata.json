@@ -1,0 +1,8 @@
+{
+  "uuid": "ryzenadj-indicator@feldvebel.hu",
+  "name": "RyzenAdj Indicator",
+  "description": "Show and set STAPM wattage using ryzenadj",
+  "version": 1,
+  "shell-version": ["45", "46"],
+  "type": "module"
+}
