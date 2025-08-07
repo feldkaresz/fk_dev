@@ -1,6 +1,4 @@
 ## RyzenAdj Indicator GNOME Extension
-## -------------------------------
-
 
 ## Tested on Ubuntu 24.04 LTS + GNOME 46
 
@@ -83,7 +81,7 @@ If you want ryzenadj to set your values automatically on boot.
 sudo nano /etc/systemd/system/ryzenadj.service
 
 copy&paste: 
------
+
 [Unit]
 Description=RyzenAdj power limit
 After=multi-user.target
@@ -95,7 +93,7 @@ User=root
 
 [Install]
 WantedBy=multi-user.target
-----
+
 
 sudo systemctl daemon-reload
 sudo systemctl enable ryzenadj.service
@@ -118,6 +116,7 @@ paste to the end: username ALL=(ALL) NOPASSWD: /usr/local/bin/ryzenadj
 
 
 debugging (if needed):
+
 gnome-extensions enable ryzenadj-indicator@feldvebel.hu
 journalctl -f -o cat /usr/bin/gnome-shell 
 
