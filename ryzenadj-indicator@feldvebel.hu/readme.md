@@ -78,6 +78,7 @@ e.g.:
 sudo ryzenadj --stapm-limit=21000 --fast-limit=21000 --slow-limit=21000
 
 
+
 Check if modified:
 
 sudo ryzenadj --info
@@ -91,8 +92,9 @@ If you want ryzenadj to set your values automatically on boot.
 sudo nano /etc/systemd/system/ryzenadj.service
 
 
+
 copy&paste: 
----
+
 
 [Unit]
 
@@ -108,13 +110,17 @@ User=root
 [Install]
 
 WantedBy=multi-user.target
----
+
+
+
+Then run commands in Terminal:
 
 sudo systemctl daemon-reload
 
 sudo systemctl enable ryzenadj.service
 
 sudo systemctl start ryzenadj.service
+
 
 
 check status:
@@ -130,7 +136,9 @@ copy 'ryzenadj-indicarot@feldvebel.hu' folder to:
 ~/.local/share/gnome-shell/extensions
 
 
+
 sudo chmod 777 ~/.local/share/gnome-shell/extensions/ryzenadj-indicator\@feldvebel.hu/extension.js
+
 
 
 sudo visudo
