@@ -1,4 +1,4 @@
-RyzenAdj Indicator GNOME Extension
+## RyzenAdj Indicator GNOME Extension
 ## -------------------------------
 
 
@@ -22,6 +22,14 @@ This extension adds a simple indicator to the top bar that shows the current pow
 - 🧠 Reads values directly from `ryzenadj` (no refresh loop — always accurate after change)
 - 🔐 Passwordless use via safe `sudoers` rule
 - ✅ Compatible with **GNOME 45+** and **GNOME 46** (ES module format)
+
+---
+
+### 💡 Use Cases
+
+- **Laptop users** who want to easily manage power and thermals
+- Quickly switch between **low-power and high-performance modes**
+- Visual feedback of current CPU wattage limit at a glance
 
 ---
 
